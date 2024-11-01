@@ -6,16 +6,6 @@ import { useState } from 'react';
 
 const FormContainer = (props) => {
 
-    const teams = [
-        'Programação',
-        'Front-End',
-        'Data Science',
-        'Devops',
-        'UX e Design',
-        'Mobile',
-        'Inovação e Gestão'
-    ]
-
     const [name, setName] = useState('');
     const [position, setPosition] = useState('');
     const [image, setImage] = useState('');
@@ -57,7 +47,7 @@ const FormContainer = (props) => {
                 />
                 <OptionsList 
                     label="Selecione sua área de interesse:" 
-                    items={teams}
+                    items={props.teamsName}
                     value={team}
                     changedValue={value => setTeam(value)}
                 />
