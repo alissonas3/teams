@@ -1,9 +1,9 @@
 import './employees.css'
 
-const Employee = ({ image, name, team }) => {
+const Employee = ({ image, name, team, primaryColorCard }) => {
     return (
         <div className='employee'>
-            <div className='headerCard'>
+            <div className='headerCard' style={{ backgroundColor: primaryColorCard }}>
                 <img src={image} alt={name}></img>
             </div>
             <div className='footerCard'>

@@ -18,7 +18,11 @@ const FormContainer = (props) => {
             position,
             image,
             team
-        });
+        })
+        setName('')
+        setPosition('')
+        setImage('')
+        setTeam('')
     }
 
     return (

@@ -8,6 +8,7 @@ const OptionsList = (props) => {
                 onChange={event => props.changedValue(event.target.value)} 
                 className='text-form' 
                 value={props.value}>
+                    <option value=""></option>
                     {props.items.map((item, index) => {
                         return <option key={index}>{item}</option>
                     })} 
